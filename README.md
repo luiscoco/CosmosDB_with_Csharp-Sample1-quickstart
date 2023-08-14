@@ -12,21 +12,16 @@ using CosmosClient client = new(
 Database database = await client.CreateDatabaseIfNotExistsAsync(
     id: "cosmicworks"
 );
-
 Console.WriteLine($"New database:\t{database.Id}");
 
-// <new_container> 
 // Container reference with creation if it does not already exist
 Container container = await database.CreateContainerIfNotExistsAsync(
     id: "products",
     partitionKeyPath: "/categoryId",
     throughput: 400
 );
-
 Console.WriteLine($"New container:\t{container.Id}");
-// </new_container>
 
-// <new_item> 
 // Create new object and upsert (create or replace) to container
 Product newItem = new(
     id: "70b63682-b93a-4c77-aad2-65501347265f",
@@ -36,7 +31,6 @@ Product newItem = new(
     quantity: 12,
     sale: false
 );
-
 Product createdItem = await container.CreateItemAsync<Product>(
     item: newItem,
     partitionKey: new PartitionKey("61dba35b-4f02-45c5-b648-c6badc0cbd79")
