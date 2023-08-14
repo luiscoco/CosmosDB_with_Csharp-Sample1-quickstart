@@ -33,12 +33,13 @@ using CosmosClient client = new(
     authKeyOrResourceToken: Environment.GetEnvironmentVariable("COSMOS_KEY")!
 );
 
+//1. Create a database
 Database database = await client.CreateDatabaseIfNotExistsAsync(
     id: "cosmicworks"
 );
 Console.WriteLine($"New database:\t{database.Id}");
 
-// Container reference with creation if it does not already exist
+//2. Container reference with creation if it does not already exist
 Container container = await database.CreateContainerIfNotExistsAsync(
     id: "products",
     partitionKeyPath: "/categoryId",
@@ -46,7 +47,7 @@ Container container = await database.CreateContainerIfNotExistsAsync(
 );
 Console.WriteLine($"New container:\t{container.Id}");
 
-// Create new object and upsert (create or replace) to container
+//3. Create new object and upsert (create or replace) to container
 Product newItem = new(
     id: "70b63682-b93a-4c77-aad2-65501347265f",
     categoryId: "61dba35b-4f02-45c5-b648-c6badc0cbd79",
@@ -61,13 +62,13 @@ Product createdItem = await container.CreateItemAsync<Product>(
 );
 Console.WriteLine($"Created item:\t{createdItem.id}\t[{createdItem.categoryName}]");
 
-// Point read item from container using the id and partitionKey
+//4. Point read item from container using the id and partitionKey
 Product readItem = await container.ReadItemAsync<Product>(
     id: "70b63682-b93a-4c77-aad2-65501347265f",
     partitionKey: new PartitionKey("61dba35b-4f02-45c5-b648-c6badc0cbd79")
 );
 
-// Create query using a SQL string and parameters
+//5. Create query using a SQL string and parameters
 var query = new QueryDefinition(
     query: "SELECT * FROM products p WHERE p.categoryId = @categoryId"
 )
