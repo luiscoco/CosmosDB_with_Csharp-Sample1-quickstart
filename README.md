@@ -18,10 +18,13 @@
 ## 6. Press the CosmosDB link “luiscococosmosdb” to navigate to the Azure CosmosDB account
 ![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/80099f62-7a69-4986-a2f5-47d9fd555773)
 
+## 7. In the Azure CosmosDB account go to the “Keys” option
+![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/26b8ab47-82f1-4277-a751-f430a7ecfc1b)
 
+## 8. Set the environmental variables values: the COSMOS_ENDPOINT and the COSMOS_KEY
+![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/848e7a42-38d1-44a8-83e8-971f2505cdab)
 
-
-Source code
+## Source code
 ```csharp
 using Microsoft.Azure.Cosmos;
 
