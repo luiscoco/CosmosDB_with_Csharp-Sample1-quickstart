@@ -1,12 +1,24 @@
 # CosmosDB_with_Csharp-sample1-quickstart
 
-1. Login in Azure CosmosDB database
-
+## 1. Login in Azure CosmosDB database
 ![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/c62911e0-7eb6-4bec-a9d0-9dad36f4f7df)
 
-
-2. Create a new Azure CosmosDB account
+## 2. Create a new Azure CosmosDB account
 ![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/b445eb97-b81b-4c2b-9d11-00f2e60369e1)
+
+## 3. Press the “Create” button in the Azure CosmosDB for NoSQL
+![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/ed55baed-de56-4765-bc30-8c3fbd23717c)
+
+## 4. Set the Subscription, the resource group, the account name, the location, select the capacity mode,apply the free tier discount, limit total account throughput and press the button “Review + create” 
+![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/89c529b5-2864-4196-a667-afb17102eb87)
+
+## 5. Azure CosmosDB structure
+![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/8b5ac069-2dda-47d6-b2b9-3fe5cd5f9c8a)
+
+## 6. Press the CosmosDB link “luiscococosmosdb” to navigate to the Azure CosmosDB account
+![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/80099f62-7a69-4986-a2f5-47d9fd555773)
+
+
 
 
 Source code
