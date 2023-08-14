@@ -90,5 +90,7 @@ while (feed.HasMoreResults)
 ## 10. Press in the "Data Explorer" option to access the ComosDB database
 ![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/746f9af5-75c9-4589-86a5-941ecc28e7d7)
 
+## 11. Open the database and the items
+![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/4e7e5078-b57a-4d0f-be5d-a705bb526b50)
 
 
