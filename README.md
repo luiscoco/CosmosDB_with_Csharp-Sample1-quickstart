@@ -1,6 +1,15 @@
 # CosmosDB_with_Csharp-sample1-quickstart
 
+1. Login in Azure CosmosDB database
 
+![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/c62911e0-7eb6-4bec-a9d0-9dad36f4f7df)
+
+
+2. Create a new Azure CosmosDB account
+![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/b445eb97-b81b-4c2b-9d11-00f2e60369e1)
+
+
+Source code
 ```csharp
 using Microsoft.Azure.Cosmos;
 
