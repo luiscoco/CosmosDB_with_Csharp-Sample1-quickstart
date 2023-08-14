@@ -24,7 +24,7 @@
 ## 8. Set the environmental variables values: the COSMOS_ENDPOINT and the COSMOS_KEY
 ![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/848e7a42-38d1-44a8-83e8-971f2505cdab)
 
-## Source code
+## 9. Source code
 ```csharp
 using Microsoft.Azure.Cosmos;
 
@@ -86,3 +86,9 @@ while (feed.HasMoreResults)
     }
 }
 ```
+
+## 10. Press in the "Data Explorer" option to access the ComosDB database
+![image](https://github.com/luiscoco/CosmosDB_with_Csharp-sample1-quickstart/assets/32194879/746f9af5-75c9-4589-86a5-941ecc28e7d7)
+
+
+
